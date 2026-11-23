@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Joy-Full Everyday — Option B (Grüns-style flow)</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdf6e6;--navy:#16295f;--deep:#0e1c45;--gold:#f2c94c;--gold2:#e4b93a;--berry:#7a2350;--mut:#5d6380;--line:#eadfc4}
+*{box-sizing:border-box}body{margin:0;font-family:"DM Sans",system-ui,sans-serif;color:var(--deep);background:var(--cream)}
+img{max-width:100%;display:block}.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Archivo Black",sans-serif;font-weight:400;letter-spacing:-.01em;margin:0}
+h2{font-size:46px;line-height:1.05;text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--navy);color:#fff;border:0;border-radius:999px;font:800 16px "DM Sans";padding:16px 34px;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--deep)}.btn-gold{background:var(--gold);color:var(--deep)}.btn-gold:hover{background:var(--gold2)}
+section{padding:80px 0}
+.ann{background:var(--navy);color:#fff;text-align:center;font-size:14px;font-weight:700;padding:9px}.ann span{color:var(--gold)}
+/* pill header */
+header{position:sticky;top:10px;z-index:40;max-width:1160px;margin:12px auto 0;padding:0 20px}
+.hbar{display:flex;align-items:center;justify-content:space-between;background:rgba(253,246,230,.85);backdrop-filter:blur(8px);border-radius:999px;padding:8px 10px 8px 22px}
+.logo{font-family:"Archivo Black";font-size:22px;color:var(--navy);display:flex;align-items:baseline;gap:6px}.logo i{font-style:normal;color:var(--berry);font-family:Caveat;font-size:24px}
+.hnav{display:flex;align-items:center;gap:10px;background:#efe6cd;border-radius:999px;padding:5px}.hnav a{font-weight:800;font-size:14px;text-decoration:none;color:var(--deep);padding:8px 14px}
+.hnav a.shop{background:var(--gold);border-radius:999px}
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding-top:24px}
+.stars{display:flex;align-items:center;justify-content:center;gap:6px;font-size:14px;color:var(--mut)}.stars b{color:var(--navy)}
+.hero h1{font-size:54px;line-height:1.05;text-align:center;margin:14px 0 22px}.hero h1 span{color:var(--berry)}
+.hero .cta{text-align:center}.mini{display:flex;justify-content:center;gap:18px;font-size:12px;color:var(--mut);margin-top:10px}
+.circles{display:flex;justify-content:center;gap:30px;margin-top:30px}.circ{text-align:center;width:120px}
+.circ b{display:flex;align-items:center;justify-content:center;width:66px;height:66px;border-radius:50%;background:var(--gold);font-family:"Archivo Black";font-size:26px;margin:0 auto 6px;color:var(--deep)}
+.circ span{font-weight:800;font-size:15px;line-height:1.15;display:block}.circ small{font-size:11px;color:var(--mut)}
+.hero-img{border-radius:22px;overflow:hidden;aspect-ratio:4/3.1}.hero-img img{width:100%;height:100%;object-fit:cover}
+/* marquee */
+.marq{overflow:hidden;padding:30px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:56px}
+.track{display:flex;gap:56px;width:max-content;animation:sl 40s linear infinite;font-family:"Archivo Black";font-size:22px;color:#b3a985;white-space:nowrap}
+@keyframes sl{to{transform:translateX(-50%)}}
+/* easy */
+.easy{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.ez{background:#fff;border-radius:24px;overflow:hidden;border:2px solid var(--deep)}.ez img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.ez div{padding:22px}.ez h3{font-size:22px}.ez p{color:var(--mut);line-height:1.5;margin:8px 0 0}
+/* PDP */
+.pdp{background:#fff;border-radius:36px 36px 0 0}.pdp .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:start}
+.gal{position:sticky;top:90px}.gal .main{border-radius:24px;background:var(--cream);aspect-ratio:1;object-fit:cover;width:100%}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}.thumbs img{border-radius:14px;aspect-ratio:1;object-fit:cover;cursor:pointer;border:3px solid transparent;background:var(--cream)}.thumbs img.on{border-color:var(--navy)}
+.pdp h1{font-size:40px;line-height:1.05}.pdp .tag{color:var(--mut);font-size:17px;line-height:1.5;margin:10px 0 0}
+.ch h3{font-family:"DM Sans";font-weight:800;font-size:15px;margin:24px 0 10px}.ch h3 span{font-weight:500;color:var(--mut)}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.opts button{border:2px solid var(--line);background:#fff;border-radius:16px;padding:14px 8px;font:800 15px "DM Sans";cursor:pointer;color:var(--deep)}.opts button small{display:block;font-weight:500;color:var(--mut);font-size:12px;margin-top:2px}
+.opts button.on{border-color:var(--navy);background:#eef1fb}
+.plan{border:2px solid var(--line);border-radius:18px;padding:16px 18px;margin-bottom:10px;cursor:pointer;display:flex;gap:14px;align-items:flex-start}
+.plan.on{border-color:var(--navy);background:#f6f8ff}.plan .r{width:20px;height:20px;border-radius:50%;border:2px solid #bbb;flex:none;margin-top:2px}.plan.on .r{border:6px solid var(--navy)}
+.plan .b{flex:1}.plan b{font-size:17px}.plan ul{margin:8px 0 0;padding:0;list-style:none;font-size:13px;color:var(--mut)}.plan li:before{content:"✓ ";color:var(--berry);font-weight:800}
+.plan .p{text-align:right;font-weight:800;font-size:20px}.plan .p s{display:block;font-size:13px;color:#aaa;font-weight:500}
+.save{background:var(--gold);color:var(--deep);font-size:11px;font-weight:800;padding:3px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.pdp .btn{width:100%;margin-top:8px;font-size:17px;padding:18px}
+.ph{font-size:12px;color:#8a5b00;background:#fff3cf;border:1px dashed var(--gold2);border-radius:8px;padding:6px 10px;margin-top:10px}
+.acc{margin-top:22px;border-top:2px solid var(--deep)}.acc>button{width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:18px 0;font:800 17px "DM Sans";cursor:pointer;display:flex;justify-content:space-between;color:var(--deep)}
+.acc>button:after{content:"+";font-size:22px}.acc>button[aria-expanded=true]:after{content:"–"}.acc>div{padding:6px 0 20px;color:var(--mut);line-height:1.6;font-size:15px}
+.acc table{width:100%;border-collapse:collapse;font-size:14px}.acc td{padding:6px 0;border-bottom:1px dashed var(--line)}.acc td:last-child{text-align:right;color:var(--deep);font-weight:700}
+/* complex cards */
+.cx{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.cxc{border-radius:24px;padding:26px;color:var(--deep);border:2px solid var(--deep)}.cxc h3{font-size:20px;line-height:1.15}.cxc .tot{font-family:Caveat;font-size:30px;margin:4px 0 10px}
+.cxc ul{padding:0;margin:0;list-style:none;font-size:14px;line-height:1.7}
+/* replace */
+.replace{background:var(--navy);color:#fff;border-radius:36px;margin:0 24px;padding:70px 0}.replace h2{color:#fff}
+.bottles{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;margin-top:40px}
+.bt{background:rgba(255,255,255,.08);border-radius:18px;padding:16px;width:170px;text-align:center}.bt small{display:block;color:#b9c3e0;font-size:12px}.bt b{display:block;font-size:15px;margin:4px 0}.bt span{color:var(--gold);font-weight:800}
+.eq{font-family:"Archivo Black";font-size:40px;color:var(--gold)}
+.one{background:var(--gold);color:var(--deep);border-radius:22px;padding:18px 22px;text-align:center;width:220px}.one b{font-family:"Archivo Black";font-size:26px;display:block}
+.tot2{text-align:center;margin-top:26px;font-size:18px}.tot2 b{color:var(--gold);font-size:28px}
+.fine{font-size:12px;color:#9fa9c8;text-align:center;max-width:820px;margin:18px auto 0;line-height:1.5}
+/* hype */
+.ugc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}.ugc div{aspect-ratio:3/4;border-radius:22px;border:2px dashed #cbbd94;display:flex;align-items:center;justify-content:center;text-align:center;color:#a39561;font-weight:700;padding:20px}
+.faq{max-width:820px;margin:36px auto 0}
+footer{background:var(--deep);color:#b9c3e0;padding:50px 0;text-align:center;font-size:13px;line-height:1.6}
+@media(max-width:900px){.hero .wrap,.pdp .wrap{grid-template-columns:1fr}.easy,.cx,.ugc{grid-template-columns:1fr 1fr}.hero h1{font-size:40px}h2{font-size:34px}.gal{position:static}.hnav a:not(.shop){display:none}.hero .wrap>*,.pdp .wrap>*{min-width:0}.circles{gap:12px;flex-wrap:wrap}.circ{width:96px}}
+@media(max-width:600px){.easy,.cx,.ugc{grid-template-columns:1fr}.hero h1{font-size:32px}}
+</style></head>
+<body>
+<div class="ann"><span>✦ Founding Launch ✦</span> Save 25% + free shipping on your first order</div>
+<header><div class="hbar"><div class="logo"><i>Joy-Full</i>everyday</div><nav class="hnav"><a href="#why">Why</a><a href="#inside">Inside</a><a href="#faq">FAQ</a><a class="shop" href="#shop">Shop Now</a></nav></div></header>
+
+<section class="hero" style="padding-top:20px"><div class="wrap">
+  <div>
+    <div class="stars">★★★★★ <b>New</b> · reviews open at launch</div>
+    <h1>5 supplements in one pack. <span id="heroPrice">Starting at just $69.</span></h1>
+    <div class="cta"><a class="btn" href="#shop">Save 25% + Free Shipping</a><div class="mini"><span>✓ <span class="gd"></span>-day guarantee</span><span>✓ Cancel anytime</span></div></div>
+    <div class="circles"><div class="circ"><b>21</b><span>Vitamins &amp; Minerals</span></div><div class="circ"><b>4</b><span>Complexes</span><small>beauty · longevity · gut · heart</small></div><div class="circ"><b>4g</b><span>of Fiber</span><small>prebiotic</small></div></div>
+  </div>
+  <div class="hero-img"><img src="assets/lifestyle.jpg" alt="Opening a Joy-Full Everyday daily pack"></div>
+</div>
+<div class="marq"><div class="track" id="track"></div></div>
+</section>
+
+<section id="why" style="padding-top:20px"><div class="wrap">
+  <h2>We made your whole routine, like, ridiculously easy.</h2>
+  <div class="easy">
+    <div class="ez"><img src="assets/gummies.jpg" alt=""><div><h3>Tastes like a treat</h3><p>Eight berry dome gummies. No pills to swallow, no powders to mix.</p></div></div>
+    <div class="ez"><img src="assets/lifestyle.jpg" alt=""><div><h3>Rip. Tip. Enjoy.</h3><p>One daily pack goes anywhere: bag, desk, glovebox, carry-on.</p></div></div>
+    <div class="ez"><img src="assets/packshot.jpg" alt=""><div><h3>Every system, daily</h3><p>Hair, skin, nails, gut, heart, longevity, plus a full multi.*</p></div></div>
+  </div>
+</div></section>
+
+<section class="pdp" id="shop"><div class="wrap">
+  <div class="gal"><img class="main" id="mainImg" src="assets/packshot.jpg" alt="Joy-Full Everyday pouch"><div class="thumbs"><img class="on" src="assets/packshot.jpg" alt=""><img src="assets/hero_art.jpg" alt=""><img src="assets/gummies.jpg" alt=""><img src="assets/sfp_label_v9.png" alt="Supplement Facts" style="object-fit:contain"></div></div>
+  <div>
+    <div class="stars" style="justify-content:flex-start">★★★★★ <b>New</b> · reviews open at launch</div>
+    <h1 style="margin-top:8px">Joy-Full Everyday Daily Gummy Packs</h1>
+    <p class="tag">21 vitamins &amp; minerals and 4 functional complexes in 8 great-tasting gummies a day.*</p>
+    <div class="ch"><h3>How many adults? <span>· one pouch each per month</span></h3><div class="opts" id="adults"></div></div>
+    <div class="ch"><h3>Autoship and save:</h3><div id="plans"></div></div>
+    <button class="btn" id="add">Add to cart</button>
+    <div class="ph">Demo pricing: retail price not set yet. Edit in shared/data.js.</div>
+    <div class="acc" id="acc"></div>
+  </div>
+</div></section>
+
+<section id="inside" style="background:#fff;padding-top:30px"><div class="wrap">
+  <h2>Four complexes. One little pack.</h2>
+  <div class="cx" id="cx"></div>
+</div></section>
+
+<section style="background:#fff;padding-top:0"><div class="replace"><div class="wrap">
+  <h2>Replaces handfuls of products.</h2>
+  <div class="bottles" id="bottles"></div>
+  <div class="tot2" id="tot2"></div>
+  <p class="fine" id="fine"></p>
+</div></div></section>
+
+<section><div class="wrap">
+  <h2>See what all the hype is about.</h2>
+  <p style="text-align:center;color:var(--mut)">Placeholder: creator videos and customer photos go here after launch.</p>
+  <div class="ugc"><div>UGC video slot</div><div>Customer photo slot</div><div>UGC video slot</div><div>Customer photo slot</div></div>
+</div></section>
+
+<section id="faq" style="background:#fff"><div class="wrap"><h2>Questions? We've got answers.</h2><div class="faq acc" id="faqList"></div>
+<div style="text-align:center;margin-top:40px"><a class="btn btn-gold" href="#shop">Get Joy-Full Everyday</a></div></div></section>
+
+<footer><div class="wrap"><div class="logo" style="justify-content:center;color:#fff;margin-bottom:14px"><i>Joy-Full</i>everyday</div><p id="disc"></p></div></footer>
+
+<script src="shared/data.js"></script>
+<script>
+const P = JF.pricing; let adults = 1, plan = "sub";
+document.querySelectorAll(".gd").forEach(e => e.textContent = P.guaranteeDays);
+document.getElementById("heroPrice").textContent = `Starting at just ${JF.money(P.sub[3],0)}.`;
+const words = ["Urolithin A","Biotin 7,500 mcg","CoQ10","Hyaluronic Acid","4g Prebiotic Fiber","Beet Root","3 Probiotic Strains","Methyl-B12","Vitamin D3","Saw Palmetto","MSM","L-Ergothioneine","Lycopene","Zinc","Sensoril® Ashwagandha"];
+document.getElementById("track").innerHTML = [...words, ...words].map(w => `<span>${w} ✦</span>`).join("");
+
+// buy box
+function render(){
+  document.getElementById("adults").innerHTML = [1,2,3].map(n => `<button class="${n===adults?"on":""}" data-n="${n}">${n} Adult${n>1?"s":""}<small>${n} pouch${n>1?"es":""}/mo</small></button>`).join("");
+  document.querySelectorAll("#adults button").forEach(b => b.onclick = () => { adults = +b.dataset.n; render(); });
+  const sub = JF.price("sub", adults), one = P.oneTime, save = Math.round((1 - sub / one) * 100);
+  document.getElementById("plans").innerHTML = `
+   <div class="plan ${plan==="sub"?"on":""}" data-p="sub"><div class="r"></div><div class="b"><b>Autoship</b><span class="save">SAVE ${save}%</span><ul><li>${JF.money(sub/30)} per pack</li><li>Free shipping</li><li>Skip, pause or cancel anytime</li></ul></div><div class="p">${JF.money(sub*adults)}<s>${JF.money(one*adults)}</s></div></div>
+   <div class="plan ${plan==="oneTime"?"on":""}" data-p="oneTime"><div class="r"></div><div class="b"><b>One-time purchase</b><ul><li>${JF.money(one/30)} per pack</li></ul></div><div class="p">${JF.money(one*adults)}</div></div>`;
+  document.querySelectorAll(".plan").forEach(p => p.onclick = () => { plan = p.dataset.p; render(); });
+  document.getElementById("add").textContent = `Add to cart · ${JF.money(JF.price(plan, adults) * adults)}`;
+}
+render();
+document.getElementById("add").onclick = e => e.target.textContent = "✓ Added (demo — no checkout connected)";
+document.querySelectorAll(".thumbs img").forEach(t => t.onclick = () => { document.getElementById("mainImg").src = t.src; document.querySelectorAll(".thumbs img").forEach(x => x.classList.toggle("on", x === t)); });
+
+// PDP accordions (Grüns order)
+const tbl = rows => `<table>${rows.map(r => `<tr><td>${r[0]}</td><td>${r[1]}${r[2] ? " · " + r[2] : ""}</td></tr>`).join("")}</table>`;
+const sections = [
+  ["Why Joy-Full?", `<b>Comprehensive:</b> replaces a hair supplement, Urolithin A, CoQ10, a probiotic and a multi.<br><b>Delicious:</b> soft berry dome gummies you'll look forward to.<br><b>Portable:</b> one pack, anywhere.<br><b>No mess, no stress:</b> no pills, no powders, no pill organizer.*`],
+  ["Benefits", JF.effects.map(e => `<b>${e.title}:</b> ${e.claim}`).join("<br>")],
+  ["Ingredients & Allergies", `<b>Vitamins</b>${tbl(JF.vitamins)}<br><b>Minerals</b>${tbl(JF.minerals)}<br>Gummy base built on FiberSmart® tapioca resistant dextrin. Final allergen and sweetener statements will be confirmed with the manufacturer.`],
+  ["Science & Formula Transparency", `Every active and its amount is on the label, including the four complexes. Spore-forming probiotics (L. coagulans, B. subtilis) for shelf stability. Testing and certification claims to be added once confirmed with the manufacturer.`],
+  ["Directions", `Eat all 8 dome gummies in one daily pack, once a day. One pouch = 30 daily packs.`],
+  ["Supplement Facts", `<img src="assets/sfp_label_v9.png" alt="Supplement Facts label v9" style="max-width:360px;border:1px solid var(--line);border-radius:8px"><p style="font-size:12px">Label v9 artwork (still shows the earlier "everyday" name).</p>`],
+  ["Cautions", "Contains 7,500 mcg biotin, which may interfere with some lab tests. Contains iron: keep out of reach of children. Consult your doctor if pregnant, nursing or taking medication."]
+];
+document.getElementById("acc").innerHTML = sections.map(([h,b]) => `<button data-acc aria-expanded="false">${h}</button><div hidden>${b}</div>`).join("");
+
+// complexes
+document.getElementById("cx").innerHTML = JF.complexes.map(c => `<div class="cxc" style="background:${c.color}33"><h3>${c.name}</h3><div class="tot">${c.total}</div><ul>${c.items.map(i => `<li>${i[0]} <b style="float:right">${i[1]}</b></li>`).join("")}</ul></div>`).join("");
+
+// replaces
+document.getElementById("bottles").innerHTML = JF.separate.map((p,i) => `<div class="bt"><small>${p.need}</small><b>${p.product}</b><span>${JF.money(p.oneTime)}</span>/mo</div>${i < JF.separate.length - 1 ? '<span class="eq" style="font-size:28px">+</span>' : ''}`).join("") + `<span class="eq">=</span><div class="one"><small>All in</small><b>Joy-Full Everyday</b>from ${JF.money(P.sub[1])}/mo</div>`;
+document.getElementById("tot2").innerHTML = `Buying all five: <b>${JF.money(JF.sepTotal("oneTime"))}/mo</b> &nbsp;·&nbsp; Joy-Full autoship: <b>${JF.money(P.sub[1])}/mo</b>`;
+document.getElementById("fine").textContent = JF.separateNote;
+
+document.getElementById("faqList").innerHTML = JF.faq.map(([q,a]) => `<button data-acc aria-expanded="false">${q}</button><div hidden>${a}</div>`).join("");
+JF.accordions();
+document.getElementById("disc").textContent = JF.disclaimer;
+JF.ribbon();
+</script>
+</body></html>

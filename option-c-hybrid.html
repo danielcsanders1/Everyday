@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Joy-Full Everyday — Option C (Hybrid, built for sell-through)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1f4b;--deep:#0a1636;--gold:#e8c35a;--cream:#fdf7ea;--mut:#5d6787;--line:#e5e8f2;--green:#1f9d57;--red:#d24a4a}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--deep);background:#fff;padding-bottom:76px}
+img{max-width:100%;display:block}.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{margin:0;letter-spacing:-.02em}.disp{font-family:"Archivo Black",sans-serif;font-weight:400;letter-spacing:-.01em}
+h2{font-size:42px;line-height:1.08;text-align:center}.sub{color:var(--mut);font-size:18px;line-height:1.55;text-align:center;max-width:720px;margin:12px auto 0}
+section{padding:80px 0}.kicker{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#b08a23}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--deep);border:0;border-radius:14px;font:800 17px Inter;padding:18px 28px;cursor:pointer;text-decoration:none;box-shadow:0 8px 22px rgba(232,195,90,.35)}
+.btn:hover{filter:brightness(1.05)}.btn-navy{background:var(--navy);color:#fff;box-shadow:none}
+.bar{background:var(--deep);color:#fff;font-size:14px;display:flex;justify-content:center;gap:16px;align-items:center;padding:9px;flex-wrap:wrap}.bar b{color:var(--gold)}
+.timer{display:inline-flex;gap:4px}.timer span{background:rgba(255,255,255,.12);border-radius:5px;padding:2px 6px;font-weight:700;font-variant-numeric:tabular-nums}.timer small{opacity:.6;font-weight:400}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 28px;border-bottom:1px solid var(--line)}
+.logo{font-family:"Archivo Black";font-size:24px;color:var(--navy);line-height:1}.logo small{display:block;font-family:Inter;font-weight:800;color:#b08a23;font-size:12px;letter-spacing:.1em}
+header nav a{font-size:14px;font-weight:600;text-decoration:none;color:var(--deep);margin-left:20px}
+/* HERO = buy box above the fold */
+.hero{background:linear-gradient(180deg,var(--cream),#fff);padding:34px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:start}
+.gal{position:relative}.gal .main{border-radius:22px;aspect-ratio:1;object-fit:cover;width:100%;background:#fff}
+.chip-float{position:absolute;background:#fff;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:700;box-shadow:0 8px 24px rgba(10,22,54,.12);display:flex;gap:6px;align-items:center}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}.thumbs img{border-radius:12px;aspect-ratio:1;object-fit:cover;cursor:pointer;border:2px solid transparent;background:#fff}.thumbs img.on{border-color:var(--navy)}
+.hero h1{font-size:44px;line-height:1.04}.hero h1 em{font-style:normal;color:var(--green)}
+.lead{color:var(--mut);font-size:17px;line-height:1.5;margin:12px 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.chips span{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:700;color:var(--navy)}
+.vcard{background:var(--navy);color:#fff;border-radius:18px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.vcard s{color:#9aa6c9;font-size:20px}.vcard .now{font-family:"Archivo Black";font-size:30px;color:var(--gold)}.vcard small{color:#b9c3e0;font-size:12px;display:block}
+.vcard .save{background:var(--green);border-radius:10px;padding:8px 12px;font-weight:800;text-align:center;line-height:1.1}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.tier{border:2px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;cursor:pointer;background:#fff;position:relative}
+.tier.on{border-color:var(--navy);background:#f3f5fc}.tier b{display:block;font-size:16px}.tier .pd{font-size:22px;font-weight:800;margin:4px 0 0}.tier small{color:var(--mut);font-size:12px}
+.tier .tg{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--gold);font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;white-space:nowrap;letter-spacing:.05em}
+.plan{display:flex;gap:10px;margin:12px 0}.plan label{flex:1;display:flex;gap:8px;align-items:center;border:2px solid var(--line);border-radius:12px;padding:11px 12px;cursor:pointer;font-weight:700;font-size:14px}
+.plan input{accent-color:var(--navy)}.plan label.on{border-color:var(--navy)}
+.hero .btn{width:100%;font-size:18px}.trust{display:flex;justify-content:space-between;margin-top:12px;font-size:12px;font-weight:600;color:var(--mut)}.trust span{display:flex;align-items:center;gap:5px}
+.ph{font-size:12px;color:#8a5b00;background:#fff3cf;border:1px dashed var(--gold);border-radius:8px;padding:6px 10px;margin-top:10px}
+/* calculator */
+.calc{background:var(--deep);color:#fff}.calc h2{color:#fff}.calc .sub{color:#b9c3e0}
+.cgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;margin-top:40px;align-items:stretch}
+.items{background:rgba(255,255,255,.05);border-radius:20px;padding:10px 22px}
+.it{display:grid;grid-template-columns:28px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08);cursor:pointer}.it:last-child{border:0}
+.it input{width:20px;height:20px;accent-color:var(--gold)}.it small{display:block;color:#9aa6c9;font-size:12px;letter-spacing:.06em;text-transform:uppercase}.it b{font-size:16px}.it .pr{font-weight:800;font-variant-numeric:tabular-nums;font-size:17px}
+.it.off{opacity:.45}
+.result{background:#fff;color:var(--deep);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.rrow{display:flex;justify-content:space-between;align-items:baseline;font-size:16px}.rrow b{font-size:22px;font-variant-numeric:tabular-nums}
+.big{border-top:2px solid var(--line);padding-top:14px;text-align:center}.big .disp{font-size:56px;color:var(--green);line-height:1}.big small{display:block;color:var(--mut);margin-top:6px}
+.segm{display:flex;background:rgba(255,255,255,.08);border-radius:999px;padding:4px;width:max-content;margin:24px auto 0}.segm button{border:0;background:none;color:#b9c3e0;font:700 13px Inter;padding:9px 18px;border-radius:999px;cursor:pointer}.segm button.on{background:var(--gold);color:var(--deep)}
+.cnote{font-size:12px;color:#8f9abd;margin-top:14px;line-height:1.5;text-align:center}
+/* effects */
+.eff{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.ef{border-radius:20px;padding:24px;background:var(--cream);position:relative;overflow:hidden}
+.ef .ic{width:48px;height:48px;border-radius:14px;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center}
+.ef h3{font-size:22px;margin:14px 0 4px}.ef p{margin:0;color:var(--mut)}.ef .hi{margin-top:14px;padding-top:12px;border-top:1px dashed #d9cfae;font-size:13px;font-weight:700;color:var(--navy);line-height:1.55}
+.ef .rep{position:absolute;top:18px;right:18px;font-size:11px;font-weight:800;color:var(--mut);background:#fff;border-radius:999px;padding:4px 10px}
+/* ingredient explorer */
+.exp{display:grid;grid-template-columns:300px 1fr;gap:24px;margin-top:40px}
+.exl button{display:block;width:100%;text-align:left;border:0;background:#f4f6fb;border-radius:14px;padding:16px 18px;margin-bottom:8px;font:700 15px Inter;cursor:pointer;color:var(--deep);border-left:5px solid transparent}
+.exl button.on{background:var(--navy);color:#fff}.exl button small{display:block;font-weight:500;opacity:.7;margin-top:2px}
+.exr{border:1px solid var(--line);border-radius:20px;padding:26px}.exr h3{font-size:26px}.exr table{width:100%;border-collapse:collapse;margin-top:14px}
+.exr td{padding:11px 0;border-bottom:1px solid var(--line)}.exr td:last-child{text-align:right;font-weight:800}
+.bar2{height:8px;border-radius:6px;background:#eef1f8;margin-top:5px;overflow:hidden}.bar2 i{display:block;height:100%}
+/* compare */
+table.cmp{width:100%;max-width:980px;margin:40px auto 0;border-collapse:separate;border-spacing:0;font-size:15px}
+.cmp th,.cmp td{padding:15px 14px;border-bottom:1px solid var(--line);text-align:center}.cmp td:first-child,.cmp th:first-child{text-align:left;font-weight:600}
+.cmp .us{background:#f3f5fc;font-weight:700}.cmp thead .us{background:var(--navy);color:#fff;border-radius:14px 14px 0 0}
+.y{color:var(--green)}.n{color:var(--red)}
+/* steps + offer */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.how div{text-align:center;padding:10px}.how b{display:flex;width:54px;height:54px;border-radius:50%;background:var(--gold);align-items:center;justify-content:center;margin:0 auto 12px;font-family:"Archivo Black";font-size:22px}
+.how h3{font-size:20px}.how p{color:var(--mut);line-height:1.5}
+.offer{background:var(--cream);border-radius:28px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.stack{list-style:none;padding:0;margin:16px 0 0}.stack li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed #d9cfae;font-weight:600}.stack li span{color:var(--green);font-weight:800}
+.faq{max-width:820px;margin:36px auto 0}.faq button{width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:20px 0;font:700 17px Inter;color:var(--deep);cursor:pointer;display:flex;justify-content:space-between}
+.faq button:after{content:"+";font-size:22px;color:var(--mut)}.faq button[aria-expanded=true]:after{content:"–"}.faq div{padding:0 0 18px;color:var(--mut);line-height:1.6}
+footer{background:var(--deep);color:#9aa6c9;text-align:center;padding:44px 0;font-size:13px;line-height:1.6}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(0,0,0,.07);z-index:50}
+.sticky .wrap{display:flex;align-items:center;gap:18px;padding:11px 24px}.sticky img{width:48px;height:48px;border-radius:10px;object-fit:cover}
+.sticky .t{flex:1}.sticky .t b{display:block}.sticky .t span{font-size:13px;color:var(--mut)}.sticky .t span em{font-style:normal;color:var(--green);font-weight:800}.sticky .btn{padding:13px 24px;font-size:15px}
+@media(max-width:900px){.hero .wrap,.cgrid,.exp,.offer{grid-template-columns:1fr}.eff,.how{grid-template-columns:1fr}.hero h1{font-size:34px}h2{font-size:32px}.sticky img,.sticky .t span{display:none}header nav a{display:none}header nav a:last-child{display:inline-block}.hero .wrap>*,.cgrid>*,.exp>*,.offer>*{min-width:0}.vcard{padding:14px;gap:8px}.vcard .now{font-size:24px}.vcard s{font-size:16px}.vcard .save{padding:6px 8px;font-size:13px}.result{padding:20px}.big .disp{font-size:40px}table.cmp{font-size:12px}.cmp th,.cmp td{padding:10px 5px}}
+</style></head>
+<body>
+<div class="bar"><span><b>Founding launch:</b> extra savings on autoship + free shipping</span><span>Ends in <span class="timer" data-timer></span></span></div>
+<header><div class="logo"><small>JOY-FULL</small>everyday</div><nav><a href="#calc">Savings</a><a href="#effects">Benefits</a><a href="#ingredients">Ingredients</a><a href="#faq">FAQ</a></nav></header>
+
+<!-- 1. HERO: offer + buy box above the fold -->
+<section class="hero" id="buy"><div class="wrap">
+  <div class="gal">
+    <img class="main" id="mainImg" src="assets/packshot.jpg" alt="Joy-Full Everyday pouch and daily pack">
+    <div class="chip-float" style="top:18px;left:18px">✦ 5 supplements → 1 pack</div>
+    <div class="chip-float" style="bottom:96px;right:18px">8 dome gummies · 30 days</div>
+    <div class="thumbs"><img class="on" src="assets/packshot.jpg" alt=""><img src="assets/lifestyle.jpg" alt=""><img src="assets/gummies.jpg" alt=""><img src="assets/sfp_label_v9.png" alt="Supplement Facts" style="object-fit:contain"></div>
+  </div>
+  <div>
+    <p class="kicker">The all-in-one daily gummy pack</p>
+    <h1 class="disp">Replace 5 supplements with 1 daily pack. <em id="heroSave">Save $151/mo.</em></h1>
+    <p class="lead">Hair, skin &amp; nails, longevity, gut, heart and a full multivitamin in 8 gummies a day.*</p>
+    <div class="chips" id="chips"></div>
+    <div class="vcard"><div><small>Buying all 5 separately</small><s id="vSep"></s></div><div><small>Joy-Full Everyday</small><span class="now" id="vNow"></span></div><div class="save" id="vSave"></div></div>
+    <div class="tiers" id="tiers"></div>
+    <div class="plan" id="plan"><label class="on"><input type="radio" name="plan" value="sub" checked> Autoship · best price</label><label><input type="radio" name="plan" value="oneTime"> One-time</label></div>
+    <button class="btn" id="add">Start my Joy-Full ritual →</button>
+    <div class="trust" id="trust"></div>
+    <div class="ph">Demo pricing: retail price not set yet. Edit in shared/data.js.</div>
+  </div>
+</div></section>
+
+<!-- 2. VALUE CALCULATOR -->
+<section class="calc" id="calc"><div class="wrap">
+  <p class="kicker" style="text-align:center;color:var(--gold)">Do the math</p>
+  <h2>What are you spending on supplements now?</h2>
+  <p class="sub">Untick anything you don't buy. Joy-Full covers all five in one pack.</p>
+  <div class="segm" id="calcPlan"><button data-p="oneTime" class="on">One-time prices</button><button data-p="sub">Subscribe prices</button></div>
+  <div class="cgrid"><div class="items" id="items"></div>
+    <div class="result">
+      <div class="rrow"><span>Separately, per month</span><b id="rSep"></b></div>
+      <div class="rrow"><span>Joy-Full Everyday, per month</span><b id="rJf"></b></div>
+      <div class="rrow"><span>Bottles to manage</span><b id="rBottles"></b></div>
+      <div class="big"><div class="disp" id="rSave"></div><small id="rYear"></small></div>
+      <a class="btn" href="#buy">Claim my savings →</a>
+    </div></div>
+  <p class="cnote" id="cnote"></p>
+</div></section>
+
+<!-- 3. EFFECTS -->
+<section id="effects"><div class="wrap">
+  <p class="kicker" style="text-align:center">What it does</p>
+  <h2>Six benefits. One pack.</h2>
+  <p class="sub">Each benefit is backed by named ingredients at the amounts on the label.*</p>
+  <div class="eff" id="eff"></div>
+</div></section>
+
+<!-- 4. INGREDIENT EXPLORER -->
+<section id="ingredients" style="background:#f8f9fd"><div class="wrap">
+  <p class="kicker" style="text-align:center">Full transparency</p>
+  <h2>Every ingredient, every dose.</h2>
+  <div class="exp"><div class="exl" id="exl"></div><div class="exr" id="exr"></div></div>
+</div></section>
+
+<!-- 5. COMPARISON -->
+<section><div class="wrap">
+  <h2>Joy-Full vs. the 5-bottle routine</h2>
+  <table class="cmp" id="cmp"></table>
+  <p class="cnote" style="color:var(--mut)" id="cmpNote"></p>
+</div></section>
+
+<!-- 6. HOW IT WORKS -->
+<section style="padding-top:0"><div class="wrap">
+  <h2>As easy as rip, eat, done.</h2>
+  <div class="how"><div><b>1</b><h3>Rip</h3><p>Tear open today's pack. 30 packs per pouch.</p></div><div><b>2</b><h3>Eat</h3><p>8 berry dome gummies, any time of day. No water needed.</p></div><div><b>3</b><h3>Done</h3><p>Every system covered. Autoship refills before you run out.</p></div></div>
+</div></section>
+
+<!-- 7. OFFER + RISK REVERSAL -->
+<section style="padding-top:0"><div class="wrap"><div class="offer">
+  <img src="assets/hero_art.jpg" alt="Joy-Full Everyday" style="border-radius:20px">
+  <div><p class="kicker">Founding member offer</p><h2 style="text-align:left;font-size:36px">Everything you get</h2>
+    <ul class="stack" id="stack"></ul>
+    <a class="btn" href="#buy" style="width:100%;margin-top:22px">Start my Joy-Full ritual →</a>
+    <p style="font-size:13px;color:var(--mut);margin-top:10px" id="guarLine"></p></div>
+</div></div></section>
+
+<section id="faq" style="background:#f8f9fd"><div class="wrap"><h2>Quick answers</h2><div class="faq" id="faqList"></div></div></section>
+<footer><div class="wrap"><div class="logo" style="color:#fff;margin-bottom:12px"><small>JOY-FULL</small>everyday</div><p id="disc"></p></div></footer>
+
+<div class="sticky"><div class="wrap"><img src="assets/packshot.jpg" alt=""><div class="t"><b>Joy-Full Everyday · 5-in-1 daily pack</b><span id="stT"></span></div><a class="btn" href="#buy" id="stBtn">Start now →</a></div></div>
+
+<script src="shared/data.js"></script>
+<script>
+const P = JF.pricing; let plan = "sub", qty = 1, calcPlan = "oneTime";
+const on = new Set(JF.separate.map(p => p.key));
+JF.countdown([...document.querySelectorAll("[data-timer]")]);
+document.getElementById("chips").innerHTML = JF.effects.map(e => `<span>${JF.icon(e.icon,16)} ${e.title}</span>`).join("");
+document.getElementById("trust").innerHTML = [["shield", P.guaranteeDays+"-day money-back"],["truck","Free shipping"],["pause","Pause or cancel anytime"]].map(([i,t]) => `<span>${JF.icon(i,16)} ${t}</span>`).join("");
+
+// hero buy box: value card + tiers update together
+function renderBuy(){
+  const each = JF.price(plan, qty), sep = JF.sepTotal(plan), save = sep - each;
+  document.getElementById("vSep").textContent = JF.money(sep) + "/mo";
+  document.getElementById("vNow").textContent = JF.money(each) + "/mo";
+  document.getElementById("vSave").innerHTML = `SAVE<br>${JF.money(save,0)}/mo`;
+  document.getElementById("heroSave").textContent = `Save ${JF.money(JF.sepTotal("sub") - P.sub[1], 0)}/mo.`;
+  document.getElementById("tiers").innerHTML = [1,2,3].map(n => `<div class="tier ${n===qty?"on":""}" data-q="${n}">${n===3?'<span class="tg">BEST VALUE</span>':n===2?'<span class="tg">POPULAR</span>':''}<b>${n} Pouch${n>1?"es":""}</b><div class="pd">${JF.money(JF.perDay(plan,n))}</div><small>per day · ${n*30} days</small></div>`).join("");
+  document.querySelectorAll(".tier").forEach(t => t.onclick = () => { qty = +t.dataset.q; renderBuy(); });
+  document.getElementById("add").textContent = `Start my Joy-Full ritual · ${JF.money(each * qty)} →`;
+  document.getElementById("stT").innerHTML = `From ${JF.money(JF.perDay("sub",3))}/day · <em>save ${JF.money(JF.sepTotal("sub") - P.sub[1],0)}/mo</em> vs. buying 5 separately`;
+}
+document.querySelectorAll("#plan input").forEach(r => r.onchange = () => { plan = r.value; document.querySelectorAll("#plan label").forEach(l => l.classList.toggle("on", l.contains(r))); renderBuy(); });
+renderBuy();
+document.getElementById("add").onclick = e => e.target.textContent = "✓ Added (demo — no checkout connected)";
+document.querySelectorAll(".thumbs img").forEach(t => t.onclick = () => { document.getElementById("mainImg").src = t.src; document.querySelectorAll(".thumbs img").forEach(x => x.classList.toggle("on", x === t)); });
+
+// savings calculator
+function renderCalc(){
+  document.getElementById("items").innerHTML = JF.separate.map(p => `<label class="it ${on.has(p.key)?"":"off"}"><input type="checkbox" data-k="${p.key}" ${on.has(p.key)?"checked":""}><div><small>${p.need}</small><b>${p.product}</b></div><span class="pr">${JF.money(p[calcPlan])}</span></label>`).join("");
+  document.querySelectorAll("#items input").forEach(c => c.onchange = () => { c.checked ? on.add(c.dataset.k) : on.delete(c.dataset.k); renderCalc(); });
+  const sep = JF.sepTotal(calcPlan, [...on]), jf = calcPlan === "sub" ? P.sub[1] : P.oneTime, save = sep - jf;
+  document.getElementById("rSep").textContent = JF.money(sep);
+  document.getElementById("rJf").textContent = JF.money(jf);
+  document.getElementById("rBottles").textContent = `${on.size} → 1`;
+  document.getElementById("rSave").textContent = save > 0 ? `${JF.money(save)}/mo` : "—";
+  document.getElementById("rYear").textContent = save > 0 ? `saved, or ${JF.money(save * 12, 0)} a year, plus ${Math.max(0, on.size - 1)} fewer bottles to reorder` : "Joy-Full costs more than what you've ticked, but covers all five needs in one pack.";
+}
+document.querySelectorAll("#calcPlan button").forEach(b => b.onclick = () => { calcPlan = b.dataset.p; document.querySelectorAll("#calcPlan button").forEach(x => x.classList.toggle("on", x === b)); renderCalc(); });
+renderCalc();
+document.getElementById("cnote").textContent = JF.separateNote;
+
+// effects (what each one replaces)
+const rep = {hair:"Replaces Nutrafol", skin:"Inside BeautyFull™", long:"Replaces Mitopure", gut:"Replaces a probiotic", heart:"Replaces CoQ10", multi:"Replaces your multi"};
+document.getElementById("eff").innerHTML = JF.effects.map(e => `<div class="ef"><span class="rep">${rep[e.key]}</span><div class="ic">${JF.icon(e.icon,24)}</div><h3>${e.title}</h3><p>${e.claim}</p><div class="hi">${e.hero}</div></div>`).join("");
+
+// ingredient explorer with dose bars
+const groups = [...JF.complexes.map(c => ({k:c.key, n:c.name, t:c.total, c:c.color, items:c.items})),
+  {k:"vit", n:"Vitamins (13)", t:"%DV shown", c:"#9db4ff", items:JF.vitamins.map(v => [v[0], v[1] + " · " + v[2]])},
+  {k:"min", n:"Minerals (8)", t:"%DV shown", c:"#9db4ff", items:JF.minerals.map(v => [v[0], v[1] + " · " + v[2]])}];
+const mg = s => { const m = String(s).replace(/,/g,"").match(/^([\d.]+)\s*mg/); return m ? +m[1] : null; };
+function showG(k){
+  const g = groups.find(x => x.k === k);
+  document.querySelectorAll(".exl button").forEach(b => b.classList.toggle("on", b.dataset.k === k));
+  const max = Math.max(...g.items.map(i => mg(i[1]) || 0));
+  document.getElementById("exr").innerHTML = `<h3>${g.n}</h3><p style="color:var(--mut);margin:4px 0 0">${g.t} per daily pack</p><table>${g.items.map(i => { const v = mg(i[1]); return `<tr><td>${i[0]}${v && max ? `<div class="bar2"><i style="width:${Math.max(3, v / max * 100)}%;background:${g.c}"></i></div>` : ""}</td><td>${i[1]}</td></tr>`; }).join("")}</table>`;
+}
+document.getElementById("exl").innerHTML = groups.map(g => `<button data-k="${g.k}" style="border-left-color:${g.c}">${g.n}<small>${g.t}</small></button>`).join("");
+document.querySelectorAll(".exl button").forEach(b => b.onclick = () => showG(b.dataset.k)); showG("beauty");
+
+// comparison
+const Y = `<span class="y">${JF.icon("check",20)}</span>`, N = `<span class="n">${JF.icon("x",20)}</span>`;
+document.getElementById("cmp").innerHTML = `<thead><tr><th></th><th class="us">Joy-Full Everyday</th><th>5 separate products</th><th>Typical gummy multi</th></tr></thead><tbody>
+<tr><td>Monthly cost (one-time)</td><td class="us">${JF.money(P.oneTime)}</td><td>${JF.money(JF.sepTotal("oneTime"))}</td><td>${JF.money(JF.separate[4].oneTime)}</td></tr>
+<tr><td>Things to buy &amp; reorder</td><td class="us">1</td><td>5</td><td>1</td></tr>
+<tr><td>21 vitamins &amp; minerals</td><td class="us">${Y}</td><td>${Y}</td><td>${Y}</td></tr>
+<tr><td>Hair complex + 7,500 mcg biotin</td><td class="us">${Y}</td><td>${Y}</td><td>${N}</td></tr>
+<tr><td>Urolithin A</td><td class="us">${Y} 250 mg</td><td>${Y} 500 mg</td><td>${N}</td></tr>
+<tr><td>4 g prebiotic fiber + probiotics</td><td class="us">${Y}</td><td>${Y}</td><td>${N}</td></tr>
+<tr><td>CoQ10 + beet root</td><td class="us">${Y} 150 mg + 500 mg</td><td>${Y} CoQ10 100 mg</td><td>${N}</td></tr>
+<tr><td>One daily pack</td><td class="us">${Y}</td><td>${N}</td><td>${Y}</td></tr></tbody>`;
+document.getElementById("cmpNote").textContent = "5 separate products = Nutrafol Women, Timeline Mitopure Gummies, Qunol CoQ10 Gummies, OLLY Probiotic + Prebiotic, OLLY Women's Multi. Typical gummy multi = OLLY Women's Multi. " + JF.separateNote;
+
+// offer stack
+document.getElementById("stack").innerHTML = [
+  ["30 daily packs (8 gummies each)", JF.money(P.oneTime)],
+  ["Autoship founding price", "–" + JF.money(P.oneTime - P.sub[1])],
+  ["Free shipping", "Included"],
+  ["Pause, skip or cancel any time", "Included"]
+].map(([a,b]) => `<li>${a}<span>${b}</span></li>`).join("") + `<li style="border:0;font-size:18px">You pay today<span style="color:var(--deep)">${JF.money(P.sub[1])}</span></li>`;
+document.getElementById("guarLine").innerHTML = `${JF.icon("shield",16)} ${P.guaranteeDays}-day money-back guarantee. If you don't love it, we'll refund you.`;
+
+document.getElementById("faqList").innerHTML = JF.faq.map(([q,a]) => `<button data-acc aria-expanded="false">${q}</button><div hidden>${a}</div>`).join("");
+JF.accordions();
+document.getElementById("disc").textContent = JF.disclaimer;
+JF.ribbon();
+</script>
+</body></html>

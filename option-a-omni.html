@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Joy-Full Everyday — Option A (Omni-style flow)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b3d;--navy2:#13265a;--ink:#0d1b3d;--mut:#5b6787;--line:#e3e7f1;--bg:#f6f8fc;--gold:#e4c76b;--green:#22a45d}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff}
+a{color:inherit}img{max-width:100%;display:block}.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;font:700 15px Inter;letter-spacing:.06em;text-transform:uppercase;padding:18px 34px;cursor:pointer;text-decoration:none}
+.btn-white{background:#fff;color:var(--navy)}.btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:var(--navy2)}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+h1,h2,h3{letter-spacing:-.02em;margin:0}h2{font-size:42px;line-height:1.1;text-align:center}
+.sub{color:var(--mut);font-size:18px;line-height:1.55;text-align:center;max-width:720px;margin:14px auto 0}
+section{padding:88px 0}
+/* bar + header */
+.bar{background:var(--navy);color:#fff;display:flex;gap:18px;align-items:center;justify-content:center;padding:10px;font-size:14px;flex-wrap:wrap}
+.bar b{color:var(--gold)}.timer{display:flex;gap:6px}.timer span{border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:3px 7px;font-weight:700;font-variant-numeric:tabular-nums}.timer small{font-weight:400;opacity:.7;margin-left:1px}
+.bar .btn{padding:7px 16px;font-size:12px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:1px solid var(--line)}
+.logo{font-weight:800;font-size:26px;letter-spacing:-.03em}.logo em{font-style:normal;color:#b08d2c;font-size:15px;display:block;letter-spacing:.02em;font-weight:700;margin-bottom:-4px}
+header nav a{font-weight:600;font-size:14px;text-decoration:none;margin-left:22px}
+/* hero */
+.hero{background:radial-gradient(ellipse at 75% 40%,#1f3c8a,#0d1b3d 60%);color:#fff;padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.pill{display:inline-block;background:#fff;color:var(--navy);font-weight:800;font-size:13px;letter-spacing:.06em;padding:5px 12px;border-radius:999px;text-transform:uppercase}
+.hero h1{font-size:60px;line-height:1.04;margin:18px 0}.hero p{font-size:18px;line-height:1.6;color:#d4dbef;max-width:520px}
+.hero .timer span{font-size:18px;padding:6px 10px}.hero .row{display:flex;align-items:center;gap:12px;margin:22px 0;font-size:14px;color:#b9c3e0}
+.guar{display:flex;align-items:center;gap:8px;font-size:14px;margin-top:14px;color:#d4dbef;justify-content:center;max-width:340px}
+.hero-img{position:relative}.hero-img img{border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.45)}
+.badge{position:absolute;top:-22px;left:-22px;width:118px;height:118px;border-radius:50%;background:var(--navy);border:2px dashed rgba(255,255,255,.5);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:30px;line-height:1;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.badge small{font-size:12px;font-weight:600;letter-spacing:.06em}
+/* proof strip */
+.strip{background:var(--bg);padding:26px 0;border-bottom:1px solid var(--line)}
+.strip .wrap{display:flex;justify-content:space-around;gap:20px;flex-wrap:wrap}
+.strip div{display:flex;align-items:center;gap:12px;font-weight:600}.strip b{font-size:28px}
+/* effects */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.card{border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(13,27,61,.08)}
+.card .ic{width:52px;height:52px;border-radius:14px;background:var(--bg);display:flex;align-items:center;justify-content:center;color:var(--navy)}
+.card h3{margin:16px 0 6px;font-size:21px}.card p{margin:0;color:var(--mut);line-height:1.5}.card .hero-ing{margin-top:12px;font-size:13px;font-weight:600;color:var(--navy);line-height:1.5}
+/* timeline */
+.tl{background:var(--navy);color:#fff}.tl h2{color:#fff}.tl .sub{color:#b9c3e0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:52px;position:relative}
+.steps:before{content:"";position:absolute;top:22px;left:12%;right:12%;height:2px;background:rgba(228,199,107,.4)}
+.step{text-align:center;padding:0 14px;position:relative}.dot{width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--navy);font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{font-size:19px}.step p{color:#b9c3e0;line-height:1.5;font-size:15px}
+/* buy box */
+.buy{background:var(--bg)}.buy .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.buy h2{text-align:left;font-size:40px}.buy .gal{position:sticky;top:20px}.buy .gal img{border-radius:20px;background:#fff}
+.thumbs{display:flex;gap:10px;margin-top:10px}.thumbs img{width:84px;height:64px;object-fit:cover;border-radius:10px;cursor:pointer;border:2px solid transparent}.thumbs img.on{border-color:var(--navy)}
+.toggle{display:grid;grid-template-columns:1fr 1fr;background:#e8ecf6;border-radius:999px;padding:5px;margin:22px 0 14px}
+.toggle button{border:0;background:none;border-radius:999px;padding:12px;font:700 14px Inter;cursor:pointer;color:var(--mut)}.toggle button.on{background:#fff;color:var(--navy);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.tier{display:flex;align-items:center;gap:16px;border:2px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:10px;cursor:pointer;background:#fff;position:relative}
+.tier.on{border-color:var(--navy);box-shadow:0 0 0 3px rgba(13,27,61,.08)}.tier .rad{width:20px;height:20px;border-radius:50%;border:2px solid #b8c0d6;flex:none}.tier.on .rad{border:6px solid var(--navy)}
+.tier .t{flex:1}.tier .t b{display:block;font-size:17px}.tier .t span{font-size:13px;color:var(--mut)}
+.tier .pr{text-align:right}.tier .pr b{font-size:20px;display:block}.tier .pr s{color:#99a2bb;font-size:13px}.tier .tag{position:absolute;top:-11px;right:16px;background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.06em;padding:3px 10px;border-radius:999px;text-transform:uppercase}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}.perks div{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--mut)}
+.buy .btn{width:100%}.placeholder{font-size:12px;color:#a06a00;background:#fff6dc;border:1px dashed #e4c76b;border-radius:8px;padding:6px 10px;margin-top:10px}
+/* benefit tabs */
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.tabs button{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:11px 20px;font:700 13px Inter;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;color:var(--mut)}.tabs button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.panel{display:grid;grid-template-columns:1fr 1.2fr;gap:36px;align-items:center;margin-top:36px;background:var(--bg);border-radius:24px;padding:36px}
+.panel h3{font-size:30px}.panel .lead{color:var(--mut);font-size:17px;line-height:1.55}
+.ing{list-style:none;padding:0;margin:0}.ing li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-weight:600}.ing li span{color:var(--mut);font-weight:500}
+/* us vs them */
+table.vs{width:100%;max-width:900px;margin:44px auto 0;border-collapse:separate;border-spacing:0;font-size:16px}
+.vs th,.vs td{padding:16px 18px;text-align:center;border-bottom:1px solid var(--line)}.vs td:first-child,.vs th:first-child{text-align:left;font-weight:600}
+.vs .us{background:var(--navy);color:#fff}.vs thead .us{border-radius:16px 16px 0 0}.vs tr:last-child .us{border-radius:0 0 16px 16px}
+.yes{color:var(--green)}.no{color:#d04848}
+.note{font-size:13px;color:var(--mut);text-align:center;max-width:860px;margin:16px auto 0;line-height:1.5}
+/* quiz cta */
+.quiz-cta{background:linear-gradient(120deg,#13265a,#0d1b3d);color:#fff;border-radius:28px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.quiz-cta h2{text-align:left;color:#fff;font-size:34px}.quiz-cta p{color:#b9c3e0;margin:10px 0 0}
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.rev{border:1.5px dashed #c9d0e3;border-radius:18px;padding:24px;color:var(--mut);background:#fff}.stars{display:flex;gap:2px;color:#c9d0e3;margin-bottom:10px}
+/* faq */
+.faq{max-width:820px;margin:40px auto 0}.faq button{width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:22px 0;font:600 18px Inter;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between}
+.faq button:after{content:"+";font-size:24px;color:var(--mut)}.faq button[aria-expanded=true]:after{content:"–"}.faq div{padding:0 0 20px;color:var(--mut);line-height:1.6}
+footer{background:var(--navy);color:#b9c3e0;padding:48px 0;font-size:13px;line-height:1.6;text-align:center}
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;gap:24px;padding:12px;transform:translateY(110%);transition:.3s;z-index:50}
+.sticky.show{transform:none}.sticky .btn{padding:13px 28px}
+/* quiz modal */
+.modal{position:fixed;inset:0;background:rgba(8,14,32,.7);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}.modal.show{display:flex}
+.qbox{background:#fff;border-radius:24px;max-width:560px;width:100%;padding:36px;position:relative}
+.qbar{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:24px}.qbar i{display:block;height:100%;background:var(--navy);transition:.3s}
+.qbox h3{font-size:26px;margin-bottom:6px}.qbox .why{font-size:13px;color:var(--mut);background:var(--bg);border-radius:10px;padding:10px 12px;margin:14px 0}
+.opt{display:block;width:100%;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:15px 18px;font:600 16px Inter;margin-top:10px;cursor:pointer;color:var(--ink)}.opt:hover,.opt.on{border-color:var(--navy);background:var(--bg)}
+.close{position:absolute;top:14px;right:18px;border:0;background:none;font-size:26px;cursor:pointer;color:var(--mut)}
+@media(max-width:900px){.hero .wrap,.buy .wrap,.panel{grid-template-columns:1fr}.cards,.revs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;gap:28px}.steps:before{display:none}.hero h1{font-size:42px}h2{font-size:32px}.quiz-cta{flex-direction:column;text-align:center}header nav a{display:none}header nav a:last-child{display:inline-block}.hero .wrap>*,.buy .wrap>*,.panel>*{min-width:0}}
+@media(max-width:600px){.steps{grid-template-columns:1fr}.hero h1{font-size:34px}}
+</style></head>
+<body>
+<div class="bar"><span><b>Founding Launch Offer</b> · up to 30% off your first pouch</span><div class="timer" data-timer></div><a class="btn btn-white" href="#buy">Shop now →</a></div>
+<header><div class="logo"><em>Joy-Full</em>everyday</div><nav><a href="#benefits">Benefits</a><a href="#science">Ingredients</a><a href="#compare">Compare</a><a href="#faq">FAQ</a><a href="#buy" style="background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px">Shop now</a></nav></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="pill">Founding launch</span>
+    <h1>One Daily Pack for Hair, Gut, Heart &amp; Longevity</h1>
+    <p>Joy-Full Everyday is 8 gummies a day that combine a full multivitamin with four complexes for beauty, longevity, gut and heart, so five bottles become one pack.*</p>
+    <div class="row">Offer ends in <div class="timer" data-timer></div></div>
+    <a class="btn btn-white" href="#buy" style="min-width:340px">Try Joy-Full today →</a>
+    <div class="guar"></div>
+  </div>
+  <div class="hero-img"><div class="badge"><small>UP TO</small>30%<small>OFF</small></div><img src="assets/hero_art.jpg" alt="Joy-Full Everyday pouch and daily pack with berry dome gummies"></div>
+</div></section>
+
+<div class="strip"><div class="wrap">
+  <div><b>21</b> vitamins &amp; minerals</div><div><b>4</b> functional complexes</div><div><b>4 g</b> prebiotic fiber</div><div><b>1</b> pack a day, 8 dome gummies</div>
+</div></div>
+
+<section id="benefits"><div class="wrap">
+  <p class="kicker" style="text-align:center">Why Joy-Full</p>
+  <h2>The All-in-One You'll Actually Take Every Day.</h2>
+  <p class="sub">No pill organizer, no five checkouts. Each pack covers six daily jobs.*</p>
+  <div class="cards" id="effects"></div>
+</div></section>
+
+<section class="tl"><div class="wrap">
+  <h2>Take It Daily. Watch It Build.</h2>
+  <p class="sub">Consistency is the formula. Here's what each complex is working on as the days add up.*</p>
+  <div class="steps">
+    <div class="step"><div class="dot">1</div><h3>Day 1</h3><p>Full daily multi: 21 vitamins &amp; minerals, plus 4 g of prebiotic fiber.</p></div>
+    <div class="step"><div class="dot">2</div><h3>Weeks 1–4</h3><p>Three spore-forming probiotics and fiber, every day, for digestive balance.*</p></div>
+    <div class="step"><div class="dot">3</div><h3>Month 2</h3><p>Steady Urolithin A, CoQ10 and beet root for cellular energy and circulation.*</p></div>
+    <div class="step"><div class="dot">4</div><h3>Month 3+</h3><p>Hair grows in cycles; biotin, MSM and saw palmetto need a full cycle of daily use.*</p></div>
+  </div>
+</div></section>
+
+<section class="buy" id="buy"><div class="wrap">
+  <div class="gal"><img id="mainImg" src="assets/packshot.jpg" alt="Joy-Full Everyday pouch"><div class="thumbs">
+    <img class="on" src="assets/packshot.jpg" alt=""><img src="assets/lifestyle.jpg" alt=""><img src="assets/gummies.jpg" alt=""><img src="assets/sfp_label_v9.png" alt="Supplement Facts" style="object-fit:contain;background:#fff"></div></div>
+  <div>
+    <p class="kicker">Joy-Full Everyday · 30 daily packs</p>
+    <h2 id="perDayHead">$2.63/day for 5 Supplements in One</h2>
+    <p style="color:var(--mut);line-height:1.55;margin-top:12px">Hair, skin &amp; nails · longevity · gut · heart · daily multi. One pouch = 30 days.</p>
+    <div class="toggle"><button data-plan="sub" class="on">Subscribe &amp; Save</button><button data-plan="oneTime">One-time</button></div>
+    <div id="tiers"></div>
+    <div class="perks"></div>
+    <button class="btn btn-navy" id="addBtn">Add to cart →</button>
+    <div class="guar" style="color:var(--mut);max-width:none" id="guar2"></div>
+    <div class="placeholder">Demo pricing: retail price not set yet. Edit in shared/data.js.</div>
+  </div>
+</div></section>
+
+<section id="science"><div class="wrap">
+  <p class="kicker" style="text-align:center">Formula transparency</p>
+  <h2>Pick a Benefit. See What's Inside.</h2>
+  <div class="tabs" id="btabs"></div>
+  <div class="panel" id="bpanel"></div>
+</div></section>
+
+<section id="compare" style="background:var(--bg)"><div class="wrap">
+  <h2>Us vs. Them: One Pack vs. Five Bottles</h2>
+  <p class="sub">What it takes to cover the same five needs by buying each product separately.</p>
+  <table class="vs" id="vs"></table>
+  <p class="note" id="vsNote"></p>
+</div></section>
+
+<section><div class="wrap"><div class="quiz-cta">
+  <div><h2>Not sure where to start?</h2><p>Take the 60-second check-in and get your Joy-Full protocol.</p></div>
+  <button class="btn btn-white" id="openQuiz">Start my check-in →</button>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>Real Customers. Real Results.</h2>
+  <p class="sub">Placeholder: verified reviews go here after launch. No reviews have been collected yet.</p>
+  <div class="revs"><div class="rev"><div class="stars"></div>Founding-member review slot</div><div class="rev"><div class="stars"></div>Founding-member review slot</div><div class="rev"><div class="stars"></div>Founding-member review slot</div></div>
+</div></section>
+
+<section id="faq" style="background:var(--bg)"><div class="wrap"><h2>Frequently Asked Questions</h2><div class="faq" id="faqList"></div></div></section>
+
+<section style="text-align:center"><div class="wrap"><h2>Five bottles out. One pack in.</h2><p class="sub">Start your Joy-Full ritual today.</p><a class="btn btn-navy" href="#buy" style="margin-top:28px">Try Joy-Full today →</a></div></section>
+
+<footer><div class="wrap"><div class="logo" style="color:#fff;margin-bottom:14px"><em>Joy-Full</em>everyday</div><p id="disc"></p></div></footer>
+
+<div class="sticky" id="sticky"><b>Joy-Full Everyday</b><span id="stickyPrice" style="color:var(--mut)"></span><a class="btn btn-navy" href="#buy">Try Joy-Full today →</a></div>
+
+<div class="modal" id="quiz"><div class="qbox"><button class="close" aria-label="Close">×</button><div class="qbar"><i id="qprog"></i></div><div id="qbody"></div></div></div>
+
+<script src="shared/data.js"></script>
+<script>
+const P = JF.pricing; let plan = "sub", qty = 1;
+const guar = `${JF.icon("shield",18)} ${P.guaranteeDays}-Day Money-Back Guarantee`;
+document.querySelectorAll(".guar").forEach(g => g.innerHTML = guar);
+document.querySelector(".perks").innerHTML = [["truck","Free shipping"],["pause","Pause or cancel"],["shield",P.guaranteeDays+"-day guarantee"]].map(([i,t]) => `<div>${JF.icon(i,18)} ${t}</div>`).join("");
+JF.countdown([...document.querySelectorAll("[data-timer]")]);
+
+// effects cards
+document.getElementById("effects").innerHTML = JF.effects.map(e => `<div class="card"><div class="ic">${JF.icon(e.icon)}</div><h3>${e.title}</h3><p>${e.claim}</p><div class="hero-ing">${e.hero}</div></div>`).join("");
+
+// buy box
+const tiersEl = document.getElementById("tiers");
+function renderTiers(){
+  tiersEl.innerHTML = [1,2,3].map(n => {
+    const each = JF.price(plan, n), full = P.oneTime, save = Math.round((1 - each / full) * 100);
+    return `<div class="tier ${n===qty?"on":""}" data-q="${n}">${n===2?'<span class="tag">Most popular</span>':''}${n===3?'<span class="tag" style="background:#22a45d;color:#fff">Best value</span>':''}
+      <div class="rad"></div><div class="t"><b>${n} Pouch${n>1?"es":""}</b><span>${n*30} days · ${JF.money(each/30)}/day${plan==="sub"?" · refills every "+(n*4)+" weeks":""}</span></div>
+      <div class="pr"><b>${JF.money(each*n)}</b>${save>0?`<s>${JF.money(full*n)}</s> <span style="color:var(--green);font-weight:700;font-size:13px">Save ${save}%</span>`:""}</div></div>`;
+  }).join("");
+  tiersEl.querySelectorAll(".tier").forEach(t => t.onclick = () => { qty = +t.dataset.q; renderTiers(); });
+  const pd = JF.money(JF.perDay(plan, qty));
+  document.getElementById("perDayHead").textContent = `${pd}/day for 5 Supplements in One`;
+  document.getElementById("stickyPrice").textContent = `from ${JF.money(JF.perDay("sub",3))}/day · ${P.guaranteeDays}-day guarantee`;
+  document.getElementById("addBtn").textContent = `Add to cart · ${JF.money(JF.price(plan, qty) * qty)} →`;
+}
+document.querySelectorAll("[data-plan]").forEach(b => b.onclick = () => { plan = b.dataset.plan; document.querySelectorAll("[data-plan]").forEach(x => x.classList.toggle("on", x === b)); renderTiers(); });
+renderTiers();
+document.querySelectorAll(".thumbs img").forEach(t => t.onclick = () => { document.getElementById("mainImg").src = t.src; document.querySelectorAll(".thumbs img").forEach(x => x.classList.toggle("on", x === t)); });
+document.getElementById("addBtn").onclick = e => { e.target.textContent = "✓ Added (demo — no checkout connected)"; };
+
+// benefit tabs
+const BT = [
+  {k:"hair", t:"Hair", lead:"BeautyFull™ plus a category-leading biotin dose, for hair that grows in strong.*", items:[["Biotin","7,500 mcg"],["MSM","750 mg"],["Saw Palmetto","200 mg"],["Sensoril® Ashwagandha","200 mg"],["L-Cysteine","150 mg"],["Zinc","25 mg"]]},
+  {k:"skin", t:"Skin & Nails", lead:"Hydration and antioxidant support from the inside.*", items:[["Hyaluronic Acid","100 mg"],["Japanese Knotweed (resveratrol)","200 mg"],["Vitamin C","93 mg"],["Vitamin E","18 mg"],["Selenium","200 mcg"],["Copper","2 mg"]]},
+  {k:"long", t:"Longevity", lead:"Full-Life™ Longevity Complex for cellular energy and renewal.*", items:JF.complexes[1].items},
+  {k:"gut", t:"Gut", lead:"Green GutFull™: prebiotic fiber, probiotics and greens in every pack.*", items:JF.complexes[2].items},
+  {k:"heart", t:"Heart", lead:"HeartFull™ Cardiovascular Complex for circulation and heart function.*", items:JF.complexes[3].items},
+  {k:"multi", t:"Daily Multi", lead:"21 vitamins & minerals in active forms: methyl-B12, methylfolate, P-5-P, chelated minerals.*", items:JF.vitamins.slice(0,6).map(v=>[v[0],v[1]+" · "+v[2]+" DV"])}
+];
+const imgFor = {hair:"lifestyle", skin:"lifestyle", long:"gummies", gut:"gummies", heart:"gummies", multi:"packshot"};
+function showTab(k){
+  const b = BT.find(x => x.k === k);
+  document.querySelectorAll("#btabs button").forEach(x => x.classList.toggle("on", x.dataset.k === k));
+  document.getElementById("bpanel").innerHTML = `<img src="assets/${imgFor[k]}.jpg" alt="" style="border-radius:18px;aspect-ratio:4/3;object-fit:cover;width:100%"><div><h3>${b.t}</h3><p class="lead">${b.lead}</p><ul class="ing">${b.items.map(i=>`<li>${i[0]}<span>${i[1]}</span></li>`).join("")}</ul></div>`;
+}
+document.getElementById("btabs").innerHTML = BT.map(b => `<button data-k="${b.k}">${b.t}</button>`).join("");
+document.querySelectorAll("#btabs button").forEach(b => b.onclick = () => showTab(b.dataset.k)); showTab("hair");
+
+// us vs them
+const Y = `<span class="yes">${JF.icon("check",22)}</span>`, N = `<span class="no">${JF.icon("x",22)}</span>`;
+document.getElementById("vs").innerHTML = `<thead><tr><th></th><th class="us">Joy-Full Everyday</th><th>Buying 5 separately</th></tr></thead><tbody>
+<tr><td>Monthly cost (subscribe)</td><td class="us"><b>${JF.money(P.sub[1])}</b></td><td>${JF.money(JF.sepTotal("sub"))}</td></tr>
+<tr><td>Monthly cost (one-time)</td><td class="us"><b>${JF.money(P.oneTime)}</b></td><td>${JF.money(JF.sepTotal("oneTime"))}</td></tr>
+<tr><td>Bottles to buy &amp; reorder</td><td class="us">1 pouch</td><td>5 bottles</td></tr>
+<tr><td>Hair, skin &amp; nails complex</td><td class="us">${Y}</td><td>${Y}</td></tr>
+<tr><td>Urolithin A</td><td class="us">${Y} 250 mg</td><td>${Y} 500 mg</td></tr>
+<tr><td>Prebiotic fiber + probiotics</td><td class="us">${Y} 4 g + 3 strains</td><td>${Y}</td></tr>
+<tr><td>CoQ10</td><td class="us">${Y} 150 mg</td><td>${Y} 100 mg</td></tr>
+<tr><td>Everything in one daily pack</td><td class="us">${Y}</td><td>${N}</td></tr></tbody>`;
+document.getElementById("vsNote").textContent = "Compared with Nutrafol Women, Timeline Mitopure Gummies, Qunol CoQ10 Gummies, OLLY Probiotic + Prebiotic and OLLY Women's Multi. " + JF.separateNote;
+
+// reviews stars placeholders
+document.querySelectorAll(".rev .stars").forEach(s => s.innerHTML = JF.icon("star",18).repeat(5));
+// faq + footer
+document.getElementById("faqList").innerHTML = JF.faq.map(([q,a]) => `<button data-acc aria-expanded="false">${q}</button><div hidden>${a}</div>`).join("");
+JF.accordions();
+document.getElementById("disc").textContent = JF.disclaimer;
+// sticky
+const hero = document.querySelector(".hero"), buy = document.getElementById("buy");
+addEventListener("scroll", () => { const r = buy.getBoundingClientRect(); document.getElementById("sticky").classList.toggle("show", hero.getBoundingClientRect().bottom < 0 && !(r.top < innerHeight && r.bottom > 0)); });
+
+// quiz (Omni-style quiz funnel, short version)
+const Q = [
+  {q:"What do you want most from your daily routine?", why:"We match your goal to the complexes doing the most work for it.", o:["Healthier hair, skin & nails","More everyday energy","Better digestion","All of the above"]},
+  {q:"How many supplements do you take today?", why:"Most people stacking 3+ bottles miss doses. One pack fixes that.", o:["None","1–2","3–4","5 or more"]},
+  {q:"How often do you forget a dose?", why:"Hair and gut support depend on daily consistency.*", o:["Rarely","A few times a week","Most days"]},
+  {q:"How long do you want to commit?", why:"Hair grows in cycles; 3 months shows the full picture.*", o:["Try 1 month","2 months","3 months (full cycle)"]}
+];
+let qi = 0, ans = [];
+const qm = document.getElementById("quiz");
+function renderQ(){
+  document.getElementById("qprog").style.width = (qi / Q.length * 100) + "%";
+  if (qi === Q.length){
+    const rec = ans[3] === 2 ? 3 : ans[3] === 1 ? 2 : 1;
+    document.getElementById("qbody").innerHTML = `<p class="kicker">Your Joy-Full protocol</p><h3>${rec} pouch${rec>1?"es":""} · ${rec*30}-day plan</h3><p style="color:var(--mut);line-height:1.55">One pack a day. ${rec===3?"A full 90-day cycle gives hair support time to show up.*":"Start here; adjust or cancel any time."}</p><button class="btn btn-navy" id="getP" style="width:100%;margin-top:18px">Get my protocol →</button>`;
+    document.getElementById("getP").onclick = () => { qty = rec; plan = "sub"; renderTiers(); qm.classList.remove("show"); buy.scrollIntoView({behavior:"smooth"}); };
+    return;
+  }
+  const c = Q[qi];
+  document.getElementById("qbody").innerHTML = `<p class="kicker">Question ${qi+1} of ${Q.length}</p><h3>${c.q}</h3><div class="why"><b>Why we ask:</b> ${c.why}</div>${c.o.map((o,i)=>`<button class="opt" data-i="${i}">${o}</button>`).join("")}`;
+  document.querySelectorAll(".opt").forEach(b => b.onclick = () => { ans[qi] = +b.dataset.i; qi++; renderQ(); });
+}
+document.getElementById("openQuiz").onclick = () => { qi = 0; ans = []; renderQ(); qm.classList.add("show"); };
+qm.querySelector(".close").onclick = () => qm.classList.remove("show");
+JF.ribbon();
+</script>
+</body></html>
